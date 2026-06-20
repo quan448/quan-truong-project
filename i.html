@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Photo Gallery | GenZ Edition</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initializeGallery()">
+
+    <h1>My Gorgeous Photo Gallery</h1>
+    <h2>Explore the Visual Art</h2>
+
+    <div id="preview-box">
+        Hover or Tab to an image below to preview!
+    </div>
+
+    <div class="gallery-grid">
+        <figure class="gallery-item" 
+                onmouseover="previewImage(this)" 
+                onmouseleave="resetPreview()"
+                onfocus="previewImage(this)" 
+                onblur="resetPreview()">
+            <img src="https://picsum.photos/id/10/200/300" alt="A beautiful forest with tall trees and sunlight">
+        </figure>
+
+        <figure class="gallery-item" onmouseover="previewImage(this)" onmouseleave="resetPreview()" onfocus="previewImage(this)" onblur="resetPreview()">
+            <img src="https://picsum.photos/id/20/200/300" alt="Dry cracked earth texture from top view">
+        </figure>
+
+        <figure class="gallery-item" onmouseover="previewImage(this)" onmouseleave="resetPreview()" onfocus="previewImage(this)" onblur="resetPreview()">
+            <img src="https://picsum.photos/id/30/200/300" alt="A classic yellow espresso machine filling a cup">
+        </figure>
+
+        <figure class="gallery-item" onmouseover="previewImage(this)" onmouseleave="resetPreview()" onfocus="previewImage(this)" onblur="resetPreview()">
+            <img src="https://picsum.photos/id/40/200/300" alt="Close up of green monstera deliciosa leaves">
+        </figure>
+
+        <figure class="gallery-item" onmouseover="previewImage(this)" onmouseleave="resetPreview()" onfocus="previewImage(this)" onblur="resetPreview()">
+            <img src="https://picsum.photos/id/50/200/300" alt="A serene clear blue ocean with small waves">
+        </figure>
+
+        <figure class="gallery-item" onmouseover="previewImage(this)" onmouseleave="resetPreview()" onfocus="previewImage(this)" onblur="resetPreview()">
+            <img src="https://picsum.photos/id/60/200/300" alt="A majestic black dog running on a snowy field">
+        </figure>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
